@@ -56,6 +56,14 @@ public class Vuelo implements Serializable{
 	@OneToMany(mappedBy = "vuelo")
 	private List<CompraPasaje> compraPasajes;
 	
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+
 	public String getOrigen() {
 		return origen;
 	}
